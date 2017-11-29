@@ -1,0 +1,7 @@
+
+#scrollBar {
+  height: 90vh;
+  position: fixed;
+  right: 0;
+  border: 1px solid black;
+}
