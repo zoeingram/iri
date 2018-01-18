@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300|Roboto:100');
+* {
+  font-family: 'Lato';
+}
+.nav {
+  height: 100px;
+  padding-bottom: 10%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.nav h1 {
+  font-family: 'Roboto';
+}
+
+[id=logo] {
+  font-size: 30px;
+  line-height: 2;
+}
+[id=username] {
+  font-size: 12px;
+  line-height: 3
+}
+
+a {
+  text-decoration: none;
+}

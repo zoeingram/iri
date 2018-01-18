@@ -1,7 +1,6 @@
 var update =document.getElementById('update');
 var del = document.getElementById('delete');
 
-console.log(update)
 update.addEventListener('click', function() {
     fetch('quotes', {
         method: 'put',
