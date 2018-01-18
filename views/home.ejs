@@ -10,13 +10,20 @@
 
 
   </head>
-  <body>
+  <body class="container">
+    <div class="row">
 
-  <% if (!user) { %>
-  	<p>Welcome! Please <a href="/login">log in</a>.</p>
-  <% } else { %>
-  	<p>Hello, <%= user.username %>. View your <a href="/profile">profile</a>.</p>
-  <% } %>
-
+      <div class="col-12 centered">
+        <div class="nav col-12">
+            <h1 class="left" id="logo">DrawTalk </h1>
+            <h1 id="username" class="right">  </h1>
+        </div>
+      <% if (!user) { %>
+      	<p>Welcome! Please <a class="link" href="/login">log in</a>.</p>
+      <% } else { %>
+      	<p>Hello, <%= user.username %>. View your <a class="link" href="/profile">documents</a>.</p>
+      <% } %>
+    </div>
+  </div>
   </body>
 </html>

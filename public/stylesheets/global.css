@@ -2,6 +2,11 @@
 * {
   font-family: 'Lato';
 }
+
+label {
+  font-family: 'Lato';
+  font-weight: 200;
+}
 .nav {
   height: 100px;
   padding-bottom: 10%;
@@ -30,4 +35,9 @@
 
 a {
   text-decoration: none;
+}
+
+.link {
+  color: blue;
+  font-weight: bold;
 }

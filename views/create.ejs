@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>DrawTalk</title>
-    <link rel="stylesheet" href="stylesheets/grid.css"/>
-    <link rel="stylesheet" href="stylesheets/global.css"/>
-    <link rel="stylesheet" href="stylesheets/profile.css"/>
+    <link rel="stylesheet" href="stylesheets/grid.css" />
+    <link rel="stylesheet" href="stylesheets/global.css" />
+    <link rel="stylesheet" href="stylesheets/profile.css" />
+
     <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/dist/snap.svg-min.js"></script>
-  </head>
-  <body class="container">
+    <script src="/bower_components/Snap.svg/dist/snap.svg-min.js"></script>
+    <script src="/scripts/speech-lib.js"></script>
+    <script src="/scripts/speech.js"></script>
+
+</head>
+
+
+<body class="container">
 
     <div class="row">
-      <div class="nav col-12">
-        <h1 class="left" id="logo">DrawTalk </h1>  <h1 id="username" class="right">  <%= user.displayName %>  <br>   <a class="right" href="/logout">Log out</a></h1>
-      </div>
+        <div class="nav col-12">
+            <h1 class="left" id="logo">DrawTalk </h1>
+            <h1 id="username" class="right">  <%= user.displayName %>  <br>   <a class="right" href="/logout">Log out</a></h1>
+        </div>
+        <div class="col-12" id="canvas-container">
+          <svg id="canvas"></svg>
 
+        </div>
+    </div>
+    </div>
 
+    <script src="/scripts/create.js"></script>
+  
+    <link rel="stylesheet" href="stylesheets/create.css" />
+</body>
 
-      </div>
-
-  </div>
-  </body>
 </html>
