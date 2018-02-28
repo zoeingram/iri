@@ -19,10 +19,12 @@
     <div class="row">
         <div class="nav twelve columns">
             <h1 class="left" id="logo">DrawTalk </h1>
-            <h1 id="username" class="right">  <%= user.displayName %>  <br>   <a class="right" href="/logout">Log out</a></h1>
+            <h1 id="username" class="right">  <%= user.displayName %> <br>
+              <a class="button button-primary right" href="/logout">Log Out</a>
+            </h1>
         </div>
         <div class="col-12 center">
-            <div id="dialog" title="Create New Document">
+            <div id="createDocumentModal" title="Create New Document">
                 <form>
                     <div class="row">
                         <div class="six columns">
@@ -44,7 +46,7 @@
             <div class="three columns box" id="newDocument"></div>
             <div class="three columns box"></div>
             <div class="three columns box"></div>
-            <div class="three columns box"></div> 
+            <div class="three columns box"></div>
 
         </div>
 

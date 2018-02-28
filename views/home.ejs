@@ -19,11 +19,14 @@
             <h1 class="left" id="logo">DrawTalk </h1>
             <h1 id="username" class="right">  </h1>
         </div>
-      <% if (!user) { %>
-      	<p>Welcome! Please <a class="link" href="/login">log in</a>.</p>
-      <% } else { %>
-      	<p>Hello, <%= user.username %>. View your <a class="link" href="/profile">documents</a>.</p>
-      <% } %>
+        <% if (!user) { %>
+        	<p>Welcome! <br>
+            
+          <a class="button button-primary" href="/login">Log In</a>
+
+        <% } else { %>
+        	<p>Hello, <%= user.username %>. View your <a class="link" href="/profile">documents</a>.</p>
+        <% } %>
     </div>
   </div>
   </body>
