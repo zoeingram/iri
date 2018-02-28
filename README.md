@@ -1,3 +1,4 @@
-# iri
+# Internet Research Incubator Project
 
 I am building a speech activated drawing and design application that runs in the browser. This application will be built on the foundation of accessibility. The software will be designed for users who, due to congenital, disease or injury related disabilities, are unable to use traditional digital hardware like a mouse and keyboard. Users who do not have the time or ability to master complex software like Adobe Photoshop or Illustrator will also benefit from the simplicity of this application. By removing the human dependencies present in current visual creation software, I am able to build my application with just one human requirement: speech. By using simple phrases to illustrate shapes, colors and lines, users will be able to take the intuitive control of drawing with a pencil and combine it with the convenience of working digitally. A user can say, for example, “red square” to place a red square at a point on an XY chart. Thanks to a grant from UCLA's department of Computer Science, I will spend the 2017-2018 academic year conducting research and developing an application.
+http://zoeaingram.com/#/iri
