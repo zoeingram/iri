@@ -1,18 +1,23 @@
 .box {
   height: 200px;
   background: #f7f4f4;
+  margin-left: 3%;
 }
 
-[id=new] {
+[id=newDocument] {
   background-image: url('/images/plus.png');
   background-repeat: no-repeat;
   background-position: center;
   display: block;
 }
 
-[id=new]:hover {
+[id=newDocument]:hover {
   background: #e9e6e6;
   background-image: url('/images/plus-dark.png');
   background-repeat: no-repeat;
   background-position: center;
+}
+
+#dialog {
+  display: none;
 }
