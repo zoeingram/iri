@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="stylesheets/profile.css" />
 
     <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/Snap.svg/dist/snap.svg-min.js"></script>
+    <!-- <script src="/bower_components/svg/dist/svg.js"></script> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.6.4/svg.js"></script>
     <script src="/scripts/speech-lib.js"></script>
     <script src="/scripts/speech.js"></script>
 
@@ -24,14 +25,13 @@
             <h1 id="username" class="right">  <%= user.displayName %>  <br>   <a class="right" href="/logout">Log out</a></h1>
         </div>
         <div class="col-12" id="canvas-container">
-          <svg id="canvas"></svg>
-
+          <div id="drawing"></div>
         </div>
     </div>
     </div>
 
     <script src="/scripts/create.js"></script>
-  
+
     <link rel="stylesheet" href="stylesheets/create.css" />
 </body>
 
