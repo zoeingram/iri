@@ -13,12 +13,14 @@
     <div class="row">
       <% include partials/nav %>
         <% include partials/layers %>
-      <div class="nine columns">
+      <div class="nine columns removeMarginLeft" >
       <div id="drawing"></div>
 
+      <div class="controlButtons">
       <button id="menuCreateButton">Create</button>
       <button id="menuInsertButton">Insert</button>
       <button id="menuExportButton">Export</button>
+    </div>
 
         <% include partials/userCommands/createShape %>
         <% include partials/userCommands/insertMedia %>

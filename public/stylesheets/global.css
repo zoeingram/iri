@@ -33,6 +33,9 @@ a {
   height: 100vh;
   width: 1200px;
 }
+.removeMarginLeft {
+  margin-left: 0;
+}
 .ui-dialog {
   background: white;
   padding: 10px;
