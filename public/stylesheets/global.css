@@ -45,3 +45,6 @@ a {
 .ui-dialog-titlebar {
   padding-bottom: 25px;
 }
+.italics {
+  font-style: oblique;
+}
