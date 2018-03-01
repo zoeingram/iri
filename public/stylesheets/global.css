@@ -14,6 +14,9 @@ label {
 .right {
   float: right;
 }
+.center {
+  text-align: center;
+}
 
 h1 {
   font-size: 4rem;
@@ -53,6 +56,10 @@ a {
 .italics {
   font-style: oblique;
 }
+.ui-dialog-title {
+  text-transform: uppercase;
+}
+
 #loginModal {
   display: none;
 }

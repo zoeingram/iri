@@ -1,3 +1,9 @@
 $(document).ready(function(){
-   $("#createShapeModal").dialog({show: 'fade', width: 500, height: 390, maxHeight: 400});
+  $('#test').on('click', function(){
+    $("#createShapeModal").dialog({show: 'fade', width: 300});
+  })
+
+   $('#createShapeButton').on('click', function(){
+     $("#createShapeModal").dialog('close');
+   });
 });

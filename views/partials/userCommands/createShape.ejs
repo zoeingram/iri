@@ -1,12 +1,16 @@
 
-<div id="createShapeModal">
+<div id="createShapeModal" title="Create a Shape">
   <form>
         <label for="shapeType">Shape Type
           <input class="u-half-width right" type="text" placeholder="Square" id="shapeType">
           </label>
-        <label for="shapePosition">Shape Position (X, Y)
-          <input class="u-half-width right" type="text" placeholder="200px" id="shapeX">
-          <input class="u-half-width right" type="text" placeholder="150px" id="shapeY">
+        <label for="shapePosition">Shape Position
+          <label for="shapePositionX">Position X
+            <input class="u-half-width right" type="text" placeholder="200px" id="shapeX">
+          </label>
+          <label for="shapePositionY">Position Y
+            <input class="u-half-width right" type="text" placeholder="150px" id="shapeY">
+          </label>
       </label>
         <label for="shapeWidth">Shape Width
           <input class="u-half-width right" type="text" placeholder="50px" id="shapeWidth">
@@ -14,6 +18,8 @@
         <label for="shapeHeight">Shape Height
           <input class="u-half-width right" type="text" placeholder="40px" id="shapeHeight">
         </label>
-        <a class="button button-primary" href="/canvas">Create Shape</a>
+        <label class="center">
+          <button type="button" class="button button-primary" id="createShapeButton">Create Shape</button>
+        </label>
     </form>
 </div>
