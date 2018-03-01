@@ -16,16 +16,9 @@ label {
   float: right;
 }
 
-.nav h1 {
-  font-family: 'Roboto';
+h1 {
+  font-size: 4rem;
 }
-
-
-[id=username] {
-  font-size: 14px;
-  line-height: 3
-}
-
 a {
   text-decoration: none;
 }

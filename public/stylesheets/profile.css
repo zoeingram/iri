@@ -21,3 +21,7 @@
 #createDocumentModal {
   display: none;
 }
+
+.ui-dialog {
+  width: 350px;
+}

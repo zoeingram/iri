@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $('#newDocument').on('click', function() {
     $( function() {
-       $( "#createDocumentModal" ).dialog();
+       $( "#createDocumentModal" ).dialog({show: 'fade'});
      } );
   });
 })
