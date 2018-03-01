@@ -12,6 +12,7 @@ var Shape = function(shapeType, posX, posY, w, h) {
     this.h = h;
 };
 var i = layerButtons.length;
+var index = 0;
 while (i--) {
     // $(layerButtons[i]).html('Layer ' + i).attr('id', 'layer' + i);
     $(layerInfo[i]).attr('id', 'info' + 'layer' + i);
@@ -72,6 +73,7 @@ if (annyang) {
             $('#createShapeModal').dialog('close');
             shapesArray.push(currentShape);
             drawShape();
+            index++
             currentShape = {};
         },
 
@@ -97,7 +99,6 @@ function drawShape() {
             drawShape.attr({
                 id: 'shapeLayer' + i
             });
-            connectToLayer(i, currentNode);
             drawShape.attr({
                 cx: currentNode.posX,
                 cy: currentNode.posY
@@ -123,17 +124,10 @@ function drawShape() {
 
 
     } //end loop
+    connectToLayer(currentNode)
 }
 
-function connectToLayer(index, currentNode) {
-  // get the layer w the same ID index
-  // do the reference thingc
-  var nodeType = currentNode.shapeType;
-  // $('#infolayer' + index).append(nodeType);
-  $('#layers').append('<li class="layerItem"><button type="button" class="button layerButton" id="layer'+ index +'">'+ 'Layer ' + index+ '</button><div class="info center"></div></li>')
-  if ($('#layer' + index).html().length < 3) {
-    $(this).html('');
-  }
-
-  // console.log(index, currentNode);
+function connectToLayer(currentNode) {
+  $('#layers').append('<li class="layerItem"><button type="button" class="button layerButton" id="layer'+ index +'">'+ 'Layer ' + index + '</button><div class="info center"></div></li>')
+  console.log(index, currentNode);
 }
