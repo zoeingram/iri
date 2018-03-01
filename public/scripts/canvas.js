@@ -3,6 +3,18 @@ var draw = SVG('drawing').size(500, 500);
 var layerButtons = $('.layerButton');
 var layerInfo = $('.info');
 
+
+var Shape = function(shapeType, posX, posY, w, h){
+  this.shapeType = shapeType;
+  this.posX = posX;
+  this.posY = posY;
+  this.w = w;
+  this.h = h;
+};
+
+var currentShape = new Shape();
+
+
 $(layerInfo).css('display', 'none');
 var i = layerButtons.length;
 while(i--) {
@@ -39,28 +51,38 @@ if(annyang) {
       },
 
       'shape type *type': function(type) {
+        console.log(type)
+        var shapeTypeS = type.toString();
         $('#shapeType').val(type);
+        currentShape.shapeType = shapeTypeS;
       },
       'position x *pos': function(pos) {
         $('#shapeX').val(pos + 'px');
+        currentShape.posX = pos;
       },
       'position y *pos': function(pos) {
         $('#shapeY').val(pos + 'px');
+        currentShape.posY = pos;
       },
       'height *size': function(size) {
         $('#shapeHeight').val(size + 'px');
+        currentShape.height = size;
       },
       'width *size': function(size) {
         $('#shapeWidth').val(size + 'px');
+        currentShape.width = size;
       },
       'create shape': function(size) {
         $('#createShapeModal').dialog('close');
+        drawShape();
       },
 
 
       'insert': function(){
         $('#menuInsertButton').click();
       },
+
+
       'export': function(){
         $('#menuExportButton').click();
       }
@@ -68,4 +90,11 @@ if(annyang) {
   annyang.addCommands(canvasCommands);
 
   annyang.start();
+}
+
+
+function drawShape() {
+  console.log("drawing")
+  var rect = draw.rect(100, 100)
+  console.log(currentShape)
 }
