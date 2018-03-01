@@ -6,3 +6,7 @@
 #createDocumentModal input{
   float: right;
 }
+
+#createShapeModal {
+  display: none;
+}

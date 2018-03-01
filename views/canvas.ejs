@@ -3,6 +3,7 @@
 <html>
   <head>
     <% include partials/head %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.6.4/svg.js"></script>
     <script src="/scripts/speech-lib.js"></script>
     <link rel="stylesheet" href="stylesheets/canvas.css" />
@@ -13,9 +14,14 @@
       <% include partials/nav %>
       <div class="twelve columns">
       <div id="drawing"></div>
+
+      <button id="test">test</button>
+        <% include partials/userCommands/createShape %>
+
     </div>
     <% include partials/footer %>
   </div>
   </body>
   <script src="/scripts/canvas.js"></script>
+  <script src="/scripts/userCommands/createShape.js"></script>
 </html>
