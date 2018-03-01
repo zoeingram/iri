@@ -10,3 +10,8 @@
 #createShapeModal {
   display: none;
 }
+
+.ui-dialog {
+  position: absolute;
+  top: 150px;
+}
