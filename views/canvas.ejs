@@ -13,23 +13,22 @@
     <div class="row">
       <% include partials/nav %>
       <div class="twelve columns">
+        <button class="button button-primary right">Save</button>
+      </div>
+      <div class="two columns right">
+
+      </div>
+      <div class="nine columns">
       <div id="drawing"></div>
 
       <button id="menuCreateButton">Create</button>
       <button id="menuInsertButton">Insert</button>
-      <button id="menuLayerButton">Layer</button>
       <button id="menuExportButton">Export</button>
-
 
         <% include partials/userCommands/createShape %>
         <% include partials/userCommands/insertMedia %>
-        <% include partials/userCommands/layer %>
         <% include partials/userCommands/exportDocument %>
-
-
-
-    </div>
-    <% include partials/footer %>
+        <% include partials/footer %>
   </div>
   </body>
   <script src="/scripts/canvas.js"></script>

@@ -31,6 +31,7 @@ a {
 }
 .container {
   height: 100vh;
+  width: 1200px;
 }
 .ui-dialog {
   background: white;
