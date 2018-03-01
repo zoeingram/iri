@@ -4,12 +4,13 @@ var layerInfo = $('.info');
 var shapesArray = [];
 var currentShape;
 
-var Shape = function(shapeType, posX, posY, w, h) {
+var Shape = function(shapeType, posX, posY, w, h, textData) {
     this.shapeType = shapeType;
     this.posX = posX;
     this.posY = posY;
     this.w = w;
     this.h = h;
+    this.textData = textData;
 };
 var i = layerButtons.length;
 var index = 0;
@@ -23,6 +24,7 @@ if (annyang) {
                 layerNum = 0;
             }
             var currentLayer = '#layer' + parseInt(layerNum);
+            console.log(currentLayer)
             element = SVG.get('shapeLayer' + layerNum);
         },
 
@@ -34,6 +36,7 @@ if (annyang) {
             // $(currentLayer).click();
         },
         'move *direction': function(direction) {
+          console.log("hitting movement");
           var currentX = element.x();
           var currentY = element.y();
 
@@ -53,8 +56,10 @@ if (annyang) {
             console.log("error");
           }
         },
+        
         'create': function() {
             console.log("hello")
+            element = '';
             $('#menuCreateButton').click();
             currentShape = new Shape();
         },
@@ -92,13 +97,28 @@ if (annyang) {
         'create shape': function(size) {
             $('#createShapeModal').dialog('close');
             shapesArray.push(currentShape);
-            drawShape();
+            drawCurrentShape();
             index++
             currentShape = {};
         },
 
         'insert': function() {
             $('#menuInsertButton').click();
+            currentShape = new Shape();
+            $('#textBoxInput').focus();
+        },
+        'text *words': function(words) {
+          console.log("texttt")
+          $('#textBoxInput').val(words);
+          currentShape.shapeType = 'text';
+          currentShape.textData = words;
+        },
+        'insert media': function() {
+            $('#insertMediaModal').dialog('close');
+            shapesArray.push(currentShape)
+            drawCurrentShape();
+            index++
+            currentShape = {};
         },
 
         'export': function() {
@@ -110,10 +130,21 @@ if (annyang) {
     annyang.start();
 }
 
-function drawShape() {
+function drawCurrentShape() {
     var drawShape;
     for (var i = 0; i < shapesArray.length; i++) {
         var currentNode = shapesArray[i];
+        if(currentNode.shapeType == 'text'){
+          console.log(currentNode.textData);
+          drawShape = draw.text(currentNode.textData);
+          drawShape.attr({
+            id: 'shapeLayer' + i,
+            x: currentNode.posX,
+            y: currentNode.posY,
+            fill: currentNode.fill,
+            family: currentNode.family
+          })
+        }
         if (currentNode.shapeType == 'Circle' || currentNode.shapeType == 'circle') {
             drawShape = draw.circle(currentNode.width);
             drawShape.attr({
