@@ -1,4 +1,4 @@
-var draw = SVG('drawing').size(500, 500);
+var draw = SVG('drawing').size(800, 500);
 var layerButtons = $('.layerButton');
 var layerInfo = $('.info');
 var shapesArray = [];
@@ -56,7 +56,7 @@ if (annyang) {
             console.log("error");
           }
         },
-        
+
         'create': function() {
             console.log("hello")
             element = '';

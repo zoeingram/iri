@@ -10,14 +10,27 @@
 
     <div class="row">
       <% include partials/nav %>
-      <div class="twelve columns">
+      <!-- <div class="twelve columns"> -->
           <% include partials/userCommands/createDocument %>
-          <div class="three columns box" id="newDocument"></div>
-          <div class="three columns box"></div>
-          <div class="three columns box"></div>
-          <div class="three columns box"></div>
+          <div class="three columns box" id="newDocument">
+          </div>
 
-        </div>
+          <div class="three columns box" id="box1">
+            <!-- <button type="button">Open Document 1</button> -->
+          </div>
+          <div class="three columns box" id="box2">
+            <!-- <button type="button">Open Document 2</button> -->
+          </div>
+          <div class="three columns box" id="box3">
+            <!-- <button type="button">Open Document 3</button> -->
+          </div>
+          <button class="buttonDoc three columns button-primary" type="button">New Document</button>
+          <button class="buttonDoc three columns" type="button">Open Document 1</button>
+          <button class="buttonDoc three columns" type="button">Open Document 2</button>
+          <button class="buttonDoc three columns" type="button">Open Document 3</button>
+
+
+        <!-- </div> -->
         <% include partials/footer %>
     </div>
     <script src="/scripts/documents.js"></script>

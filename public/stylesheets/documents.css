@@ -1,21 +1,42 @@
 .box {
   height: 200px;
-  background: #f7f4f4;
   margin-left: 3%;
-}
-
-[id=newDocument] {
-  background-image: url('/images/plus.png');
   background-repeat: no-repeat;
   background-position: center;
   display: block;
+  border: 1px solid #f4f4f6;
+  box-shadow: 2px 2px 31px 1px rgba(0,0,0,0.08);
+}
+.buttonDoc {
+  margin-left: 3%;
+  display: block;
+  margin-top: 2%;
+}
+#newDocument{
+  background-image: url('/images/plus.png');
 }
 
+#box1{
+  background-image: url('/images/1.png');
+  background-size: cover;
+}
+#box2{
+  background-image: url('/images/2.png');
+  background-size: cover;
+}
+#box3{
+  background-image: url('/images/3.png');
+  background-size: cover;
+}
+
+.box:hover{
+  box-shadow: 2px 2px 31px 1px rgba(0,0,0,0.1);
+}
 [id=newDocument]:hover {
-  background: #e9e6e6;
   background-image: url('/images/plus-dark.png');
   background-repeat: no-repeat;
   background-position: center;
+  background-color:
 }
 
 #createDocumentModal {
