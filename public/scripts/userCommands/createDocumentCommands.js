@@ -1,9 +1,11 @@
-if (annyang) {
+if (annyang && window.location != "localhost:4000/canvas") {
     var createDocumentCommands = {
+      'new document': function(){
+        $('#newDocument').click();
+      },
         'document name *name': function(name) {
             $('#documentName').val(name);
         },
-
         'next': function() {
             // TODO: fix
             $('.inputs').keypress(function() {

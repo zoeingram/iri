@@ -1,10 +1,8 @@
-if(annyang) {
+
+if(annyang && window.location !="localhost:4000/canvas") {
   var generalCommands = {
       'log in': function(){
         $('#loginButton').click();
-      },
-      'new document': function(){
-        $('#newDocument').click();
       },
       'about': function(){
         var aboutUrl = $('#aboutButton').attr('href');
