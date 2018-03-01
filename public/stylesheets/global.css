@@ -23,6 +23,10 @@ a {
   text-decoration: none;
 }
 
+.container {
+  height: 100vh;
+}
+
 .ui-dialog {
   background: white;
   padding: 10px;

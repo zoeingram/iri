@@ -8,8 +8,8 @@
 
   <body class="container">
     <div class="row">
-      <div class="twelve colums centered">
       <% include partials/nav %>
+      <div class="twelve colums">
         <div id="loginModal" title="Log In">
           <% include partials/login %>
         </div>
@@ -19,6 +19,7 @@
           <p>DrawTalk is a drawing and design application, rooted in a commitment to accessible engineering and design. Activated and controlled by speech, users are able to create digital, SVG based pieces of work using only their voices.</p>
         </div>
       </div>
+      <% include partials/footer %>
     </div>
     <script src="/scripts/index.js"></script>
   </body>

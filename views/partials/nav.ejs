@@ -1,14 +1,20 @@
 <!-- TODO: Get local library for UI -->
-<link rel="stylesheet" href="/stylesheets/partials/nav.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<div class="nav">
-  <h1 class="left" id="logo">DrawTalk </h1>
-  <% if (!user) { %>
-    <button class="button button-primary right" id="loginButton">Log In</button>
-    <% } else { %>
-    <ul class="navItems right">
-      <li> <a class="button" href="/profile"> <%= user.displayName %> </a> </li>
-      <li><a class="button button-primary right" href="/logout">Log Out</a></li>
+<div class="twelve colums">
+  <link rel="stylesheet" href="/stylesheets/partials/nav.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <div class="nav">
+    <h1 class="left" id="logo">DrawTalk </h1>
+    <% if (!user) { %>
+      <ul class="navItems right">
+      <li><a class="button right" href="/about">About</a></li>
+      <li><button class="button button-primary right" id="loginButton">Log In</button></li>
     </ul>
-    <% } %>
+      <% } else { %>
+      <ul class="navItems right">
+        <li><a class="button " href="/about">About</a></li>
+        <li> <a class="button" href="/profile"> <%= user.displayName %> </a> </li>
+        <li><a class="button button-primary right" href="/logout">Log Out</a></li>
+      </ul>
+      <% } %>
+  </div>
 </div>
