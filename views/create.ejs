@@ -1,26 +1,20 @@
 <!-- TODO: Link actual libraries not CDN -->
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <% include partials/head %>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.6.4/svg.js"></script>
-        <script src="/scripts/speech-lib.js"></script>
-        <link rel="stylesheet" href="stylesheets/create.css" />
-</head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.6.4/svg.js"></script>
+    <script src="/scripts/speech-lib.js"></script>
+    <link rel="stylesheet" href="stylesheets/create.css" />
+  </head>
 
-<body class="container">
+  <body class="container">
     <div class="row">
-
-        <div class="nav col-12">
-          <% include partials/nav %>
-        <div class="col-12" id="canvas-container">
-            <div id="drawing"></div>
-        </div>
+      <div class="twelve columns">
+      <% include partials/nav %>
+      <div id="drawing"></div>
     </div>
-    </div>
-    <script src="/scripts/create.js"></script>
-
-</body>
-
+  </div>
+  </body>
+  <script src="/scripts/create.js"></script>
 </html>

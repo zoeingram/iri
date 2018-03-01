@@ -7,10 +7,6 @@ label {
   font-family: 'Lato';
   font-weight: 200;
 }
-.nav {
-  height: 100px;
-  padding-bottom: 10%;
-}
 
 .left {
   float: left;

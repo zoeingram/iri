@@ -1,6 +1,4 @@
 #drawing {
   border: 1px solid #f4f4f6;
-  position: relative;
-  top: 150px;
   box-shadow: 2px 2px 31px 1px rgba(0,0,0,0.12);
 }
