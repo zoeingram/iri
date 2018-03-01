@@ -103,12 +103,19 @@ function drawShape() {
 
     for(var i = 0; i < shapesArray.length; i++) {
       var currentNode = shapesArray[i];
-      if (currentNode.shapeType == 'Circle' || currentNode.shapeType == "Ellipse") {
-        console.log("its a cirlce!!");
+      if (currentNode.shapeType == 'Circle') {
         drawShape = draw.circle(currentNode.width);
-      } else {
-        console.log("bleh")
-
+        drawShape.attr({cx: currentNode.posX, cy: currentNode.posY});
+      } else if (currentNode.shapeType == 'Ellipse') {
+          drawShape = draw.ellipse(currentNode.width, currentNode.height);
+          drawShape.attr({cx: currentNode.posX, cy: currentNode.posY});
+      }  else if (currentNode.shapeType == 'Square' || currentNode.shapeType == 'Rectangle') {
+        drawShape = draw.rect(currentNode.width, currentNode.height);
+        drawShape.attr({cx: currentNode.posX, cy: currentNode.posY});
+      } else if (currentNode.shapeType == 'Line') {
+          // drawShape = draw.rect(currentNode.width, currentNode.height);
+        } else {
+        console.log("no shape");
       }
 
 
