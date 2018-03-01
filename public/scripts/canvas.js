@@ -11,9 +11,8 @@ var Shape = function(shapeType, posX, posY, w, h){
   this.w = w;
   this.h = h;
 };
-
-var currentShape = new Shape();
-
+var shapesArray = [];
+var currentShape;
 
 $(layerInfo).css('display', 'none');
 var i = layerButtons.length;
@@ -48,6 +47,7 @@ if(annyang) {
       'create': function(){
         console.log("hello")
         $('#menuCreateButton').click();
+        currentShape = new Shape();
       },
 
       'shape type *type': function(type) {
@@ -74,14 +74,14 @@ if(annyang) {
       },
       'create shape': function(size) {
         $('#createShapeModal').dialog('close');
+        shapesArray.push(currentShape);
         drawShape();
+        currentShape = {};
       },
-
 
       'insert': function(){
         $('#menuInsertButton').click();
       },
-
 
       'export': function(){
         $('#menuExportButton').click();
@@ -96,5 +96,5 @@ if(annyang) {
 function drawShape() {
   console.log("drawing")
   var rect = draw.rect(100, 100)
-  console.log(currentShape)
+  console.log(shapesArray);
 }
