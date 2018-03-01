@@ -2,9 +2,8 @@
 <html>
 <head>
   <% include partials/head %>
-    <link rel="stylesheet" href="stylesheets/profile.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="/scripts/profile.js"></script>
+    <link rel="stylesheet" href="stylesheets/profile.css" />
 </head>
 
 <body class="container">
@@ -12,16 +11,16 @@
     <div class="row">
       <% include partials/nav %>
       <div class="twelve columns">
-
-          
-            <div class="three columns box" id="newDocument"></div>
-            <div class="three columns box"></div>
-            <div class="three columns box"></div>
-            <div class="three columns box"></div>
+          <% include partials/createDocumentModal %>
+          <div class="three columns box" id="newDocument"></div>
+          <div class="three columns box"></div>
+          <div class="three columns box"></div>
+          <div class="three columns box"></div>
 
         </div>
         <% include partials/footer %>
     </div>
+    <script src="/scripts/profile.js"></script>
 </body>
 
 </html>
