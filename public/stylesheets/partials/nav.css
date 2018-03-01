@@ -1,3 +1,10 @@
 .nav {
-  padding-top: 1%;
+  padding-top: 3%;
+}
+.navItems {
+  list-style: none;
+}
+li {
+  display: inline-flex;
+
 }

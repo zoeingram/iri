@@ -18,24 +18,6 @@
   background-position: center;
 }
 
-.ui-dialog {
-  background: white;
-  padding: 10px;
-  box-shadow: 2px 2px 31px 1px rgba(0,0,0,0.12);
-}
-.ui-dialog-titlebar-close {
-  float: right;
-  font-size: 10px;
-  line-height: 33px;
-  height: 33px;
-  padding: 0 10px;
-}
-.ui-dialog-title {
-  line-height: 33px;
-}
-.ui-dialog-titlebar {
-  padding-bottom: 25px;
-}
 #createDocumentModal {
   display: none;
 }

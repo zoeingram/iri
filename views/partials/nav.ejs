@@ -1,12 +1,15 @@
+<!-- TODO: Get local library for UI -->
 <link rel="stylesheet" href="/stylesheets/partials/nav.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <div class="nav">
   <h1 class="left" id="logo">DrawTalk </h1>
   <% if (!user) { %>
     <button class="button button-primary right" id="loginButton">Log In</button>
     <% } else { %>
-    <h1 id="username" class="right">  <%= user.displayName %> <br>
-    <a class="button button-primary right" href="/logout">Log Out</a>
-    <% } %>
+    <ul class="navItems right">
+      <li> <a class="button" href="/profile"> <%= user.displayName %> </a> </li>
+      <li><a class="button button-primary right" href="/logout">Log Out</a></li>
+    </ul>
 
-  </h1>
+    <% } %>
 </div>
