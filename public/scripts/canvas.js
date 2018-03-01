@@ -92,9 +92,28 @@ if(annyang) {
   annyang.start();
 }
 
-
 function drawShape() {
-  console.log("drawing")
-  var rect = draw.rect(100, 100)
+  // [shape, shape, shape]
   console.log(shapesArray);
+  var drawShape;
+  //for each item in the array, we look a few things:
+    //1. the type -- if "square or rectangle, we can draw within those functions" same w circle
+    //2. pass the params.
+    //3. draw the shape within the loop??
+
+    for(var i = 0; i < shapesArray.length; i++) {
+      var currentNode = shapesArray[i];
+      if (currentNode.shapeType == 'Circle' || currentNode.shapeType == "Ellipse") {
+        console.log("its a cirlce!!");
+        drawShape = draw.circle(currentNode.width);
+      } else {
+        console.log("bleh")
+
+      }
+
+
+    } //end loop
+
+
+
 }
