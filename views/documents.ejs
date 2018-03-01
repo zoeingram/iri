@@ -3,7 +3,7 @@
 <head>
   <% include partials/head %>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <link rel="stylesheet" href="stylesheets/profile.css" />
+    <link rel="stylesheet" href="stylesheets/documents.css" />
 </head>
 
 <body class="container">
@@ -11,7 +11,7 @@
     <div class="row">
       <% include partials/nav %>
       <div class="twelve columns">
-          <% include partials/createDocumentModal %>
+          <% include partials/userCommands/createDocumentModal %>
           <div class="three columns box" id="newDocument"></div>
           <div class="three columns box"></div>
           <div class="three columns box"></div>
@@ -20,7 +20,7 @@
         </div>
         <% include partials/footer %>
     </div>
-    <script src="/scripts/profile.js"></script>
+    <script src="/scripts/documents.js"></script>
 </body>
 
 </html>
