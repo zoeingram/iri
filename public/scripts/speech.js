@@ -2,7 +2,7 @@
 
 
 
-// if (annyang) {
+if (annyang) {
 //
 //   x = 150;
 //   y = 150;
@@ -71,8 +71,8 @@
 //   };
 
   // Add our commands to annyang
-  // annyang.addCommands(commands);
+  annyang.addCommands(commands);
 
-  // Start listening. You can call this here, or attach this call to an event, button, etc.
-  // annyang.start();
-// }
+  // Start listening
+  annyang.start();
+}

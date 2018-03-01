@@ -44,3 +44,13 @@
   border: 1px solid #f4f4f6;
   box-shadow: 2px 2px 31px 1px rgba(0,0,0,0.12);
 }
+
+#saveButton {
+  background: #f06033;
+  border-color: #f06033;
+}
+
+#saveButton:hover {
+  background: #f05033;
+  border-color: #f05033;
+}
