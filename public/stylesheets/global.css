@@ -24,12 +24,9 @@ label {
   font-family: 'Roboto';
 }
 
-[id=logo] {
-  font-size: 30px;
-  line-height: 2;
-}
+
 [id=username] {
-  font-size: 12px;
+  font-size: 1rem;
   line-height: 3
 }
 

@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="/stylesheets/partials/nav.css">
+<div class="nav">
+  <h1 class="left" id="logo">DrawTalk </h1>
+  <% if (!user) { %>
+    <a class="button button-primary right" href="/login">Log In</a>
+    <% } else { %>
+    <h1 id="username" class="right">  <%= user.displayName %> <br>
+    <a class="button button-primary right" href="/logout">Log Out</a>
+    <% } %>
+
+  </h1>
+</div>
