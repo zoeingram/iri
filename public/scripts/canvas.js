@@ -38,16 +38,16 @@ if (annyang) {
           var currentY = element.y();
 
           if (direction == 'Up'|| direction == 'up') {
-              currentY -=10;
+              currentY -=30;
               element.move(currentX, currentY);
           } else if (direction == 'Down'|| direction == 'down') {
-            currentY +=10;
+            currentY +=30;
             element.move(currentX, currentY);
           } else if (direction == 'Left'|| direction == 'left') {
-            currentX -=10;
+            currentX -=30;
             element.move(currentX, currentY);
           } else if (direction == 'Right'|| direction == 'right') {
-            currentX +=10;
+            currentX +=30;
             element.move(currentX, currentY);
           } else {
             console.log("error");
