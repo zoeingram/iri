@@ -23,14 +23,20 @@ a {
   text-decoration: none;
 }
 
+#logo {
+  font-size: 20px;
+  letter-spacing: 1rem;
+}
 .container {
   height: 100vh;
 }
-
 .ui-dialog {
   background: white;
   padding: 10px;
   box-shadow: 2px 2px 31px 1px rgba(0,0,0,0.12);
+  position: absolute;
+  top: 10%;
+  right: 0%;
 }
 .ui-dialog-titlebar-close {
   float: right;
@@ -47,4 +53,7 @@ a {
 }
 .italics {
   font-style: oblique;
+}
+#loginModal {
+  display: none;
 }
