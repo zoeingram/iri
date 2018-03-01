@@ -12,7 +12,6 @@ if(annyang) {
         });
       },
       'length *length': function(length){
-        console.log("hits len")
         $('#documentWidth').val(length + 'px');
       },
 
