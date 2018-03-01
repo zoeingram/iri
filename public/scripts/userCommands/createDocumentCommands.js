@@ -13,8 +13,8 @@ if (annyang && window.location != "localhost:4000/canvas") {
                 $(this).next('.inputs').focus();
             });
         },
-        'length *length': function(length) {
-            $('#documentWidth').val(length + 'px');
+        'width *size': function(size) {
+            $('#documentWidth').val(size + 'px');
         },
 
         'height *size': function(size) {
