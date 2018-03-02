@@ -147,37 +147,22 @@ function drawCurrentShape() {
         }
         if (currentNode.shapeType == 'Circle' || currentNode.shapeType == 'circle') {
             drawShape = draw.circle(currentNode.width);
-            drawShape.attr({
-                id: 'shapeLayer' + i,
-                cx: currentNode.posX,
-                cy: currentNode.posY,
-                fill: currentNode.fill,
-                stroke: currentNode.stroke
-            }
-          );
         } else if (currentNode.shapeType == 'Ellipse' || currentNode.shapeType == 'ellipse') {
             drawShape = draw.ellipse(currentNode.width, currentNode.height);
-            drawShape.attr({
-                id: 'shapeLayer' + i,
-                cx: currentNode.posX,
-                cy: currentNode.posY,
-                fill: currentNode.fill,
-                stroke: currentNode.stroke
-            });
         } else if (currentNode.shapeType == 'Square' || currentNode.shapeType == 'square' || currentNode.shapeType == 'Rectangle' || currentNode.shapeType == 'rectangle') {
             drawShape = draw.rect(currentNode.width, currentNode.height);
-            drawShape.attr({
-                id: 'shapeLayer' + i,
-                x: currentNode.posX,
-                y: currentNode.posY,
-                fill: currentNode.fill,
-                stroke: currentNode.stroke
-            });
         } else if (currentNode.shapeType == 'Line') {
             // drawShape = draw.rect(currentNode.width, currentNode.height);
         } else {
             console.log("no shape");
         }
+        drawShape.attr({
+            id: 'shapeLayer' + i,
+            cx: currentNode.posX,
+            cy: currentNode.posY,
+            fill: currentNode.fill,
+            stroke: currentNode.stroke
+        });
 
 
     } //end loop

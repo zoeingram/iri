@@ -10,27 +10,39 @@
 
     <div class="row">
       <% include partials/nav %>
-      <!-- <div class="twelve columns"> -->
           <% include partials/userCommands/createDocument %>
           <div class="three columns box" id="newDocument">
           </div>
 
           <div class="three columns box" id="box1">
-            <!-- <button type="button">Open Document 1</button> -->
+            <div class="overlayData" id="data1">
+              <p>document-three.svg</p>
+              <p>Created 1/12/2018</p>
+              <p>Updated 3/01/2018</p>
+              <p>500px 500px</p>
+            </div>
           </div>
           <div class="three columns box" id="box2">
-            <!-- <button type="button">Open Document 2</button> -->
+            <div class="overlayData" id="data2">
+              <p>document-two.svg</p>
+              <p>Created 2/02/2018</p>
+              <p>Updated 3/1/2018</p>
+              <p>700px 200px</p>
+            </div>
           </div>
           <div class="three columns box" id="box3">
-            <!-- <button type="button">Open Document 3</button> -->
+            <div class="overlayData" id="data3">
+              <p>document-one.svg</p>
+              <p>Created 2/01/2018</p>
+              <p>Updated 3/01/2018</p>
+              <p>500px 500px</p>
+            </div>
           </div>
-          <button class="buttonDoc three columns button-primary" type="button">New Document</button>
-          <button class="buttonDoc three columns" type="button">Open Document 1</button>
-          <button class="buttonDoc three columns" type="button">Open Document 2</button>
-          <button class="buttonDoc three columns" type="button">Open Document 3</button>
+          <button class="buttonDoc three columns button-primary button" id="newDocumentButton">New Document</button>
+          <a class="buttonDoc three columns button" href="/documents/1" id="1">Document 3</a>
+          <a class="buttonDoc three columns button" id="2">Document 2</a>
+          <a class="buttonDoc three columns button" id="3">Document 1</a>
 
-
-        <!-- </div> -->
         <% include partials/footer %>
     </div>
     <script src="/scripts/documents.js"></script>
